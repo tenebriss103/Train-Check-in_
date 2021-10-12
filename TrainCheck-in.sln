@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainCheck-in", "TrainCheck-in\TrainCheck-in.csproj", "{90AE66E4-D95E-43E3-8F7E-6288BC890F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90AE66E4-D95E-43E3-8F7E-6288BC890F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90AE66E4-D95E-43E3-8F7E-6288BC890F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90AE66E4-D95E-43E3-8F7E-6288BC890F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90AE66E4-D95E-43E3-8F7E-6288BC890F08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FCE0EE9-B416-48EC-BDB6-8D76C1E6F9F4}
+	EndGlobalSection
+EndGlobal

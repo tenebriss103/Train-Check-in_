@@ -1,0 +1,64 @@
+﻿@model TrainCheck_in.Models.Passenger
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Реєстраційна форма</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+        
+</head>
+<body>
+    
+        <div class="panel panel-success">
+            <div class="panel-heading text-center"><h4>Реєстрація на потяг</h4></div>
+            <div class="panel-body">
+                <form asp-action="create" asp-controller="home" method="post">
+                    
+                    <div asp-validation-summary="All"></div>
+                        <div class="form-group">
+                            <label asp-for="TicketID">Номер квитка:</label>
+                            <input class="form-control" asp-for="TicketID" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Name">Ім'я пасажира:</label>
+                            <input class="form-control" asp-for="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SurName">Прізвище пасажира:</label>
+                            <input class="form-control" asp-for="SurName" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ваш тип квитка:</label>
+
+                            @Html.RadioButtonFor(m => m.TypeOfTicket, "Дорослий") <label>Дорослий</label>
+                            @Html.RadioButtonFor(m => m.TypeOfTicket, "Дитячий")  <label>Дитячий</label>
+                            @Html.RadioButtonFor(m => m.TypeOfTicket, "Студентський")  <label>Студентський</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Чи порібна постільна білизна?</label>
+                            <select class="form-control" asp-for="Linens">
+                                <option value="true">Так</option>
+                                <option value="false">Ні</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Бажаєте склянку чаю?</label>
+                            <select class="form-control" asp-for="Tea">
+                                <option value="true">Так</option>
+                                <option value="false">Ні</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Відправити" class="btn btn-default" />
+                        </div>
+                   </form>
+            </div>
+        </div>    
+</body>
+</html>
