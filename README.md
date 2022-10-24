@@ -1,1 +1,1 @@
-Тематикой этого простого проекта является регистрация на поезд (к сожалению, не очень реалистично), но целью проекта являлась работа над созданием базы данных с помощью Entity Framework. В проект также добавлен Nlog.
+The topic of this simple project is train registration, the goal of the project was to work on creating a database using the Entity Framework. Nlog has also been added to the project.
